@@ -43,7 +43,7 @@ def test_cloud_resume_e2e():
 
     # Start Playwright and open a browser
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=True)  # Launches the browser, set headless=True for no UI
+        browser = playwright.chromium.launch(headless=False)  # Launches the browser, set headless=True for no UI
         page = browser.new_page()
 
         # Navigate to the Cloud Resume website
